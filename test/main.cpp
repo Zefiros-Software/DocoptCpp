@@ -25,6 +25,9 @@
 
 #include <stdint.h>
 
+static int gargc;
+static char **gargv;
+
 static const char USAGE[] =
 R"(Naval Fate.
 
@@ -57,9 +60,6 @@ TEST( UtilTest, Sanity )
         std::cout << arg.first <<  arg.second << std::endl;
     }
 }
-
-int gargc;
-char **gargv;
 
 int main( int argc, char **argv )
 {
