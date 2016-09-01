@@ -7,4 +7,4 @@ premake5 gmake
 
 make 
 
-./bin/Test/Docopt
+./bin/Test/Docopt --help
