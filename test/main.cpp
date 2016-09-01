@@ -20,7 +20,8 @@
  * THE SOFTWARE.
  */
 #include "gtest/gtest.h"
-#include <armadillo>
+
+#include "docopt.h"
 
 #include <stdint.h>
 
