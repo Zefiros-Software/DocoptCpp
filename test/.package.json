@@ -1,0 +1,13 @@
+{
+    "name": "Zefiros-Software/DocoptCpp-Dev",
+    "requires": [
+        {
+            "name": "Zefiros-Software/GoogleTest",
+            "version": "@head"
+        },
+        {
+            "name": "Zefiros-Software/DocoptCpp",
+            "version": "@head"
+        }
+    ]
+}
