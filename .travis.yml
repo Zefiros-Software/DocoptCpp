@@ -8,9 +8,6 @@ matrix:
           env: VERSION=6
         - os: linux
           dist: trusty          
-          env: VERSION=7
-        - os: linux
-          dist: trusty          
           env: VERSION=5
         # Use generic language for osx
         - os: osx
