@@ -1,0 +1,12 @@
+version: '@head'
+export: |
+    project "DocoptCpp"
+
+        kind "StaticLib"
+
+        files "docopt.cpp"
+
+        zpm.export [[
+            cppdialect "C++11"
+            includedirs "."
+        ]]

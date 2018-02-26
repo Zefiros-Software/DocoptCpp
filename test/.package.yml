@@ -1,0 +1,7 @@
+requires:
+  - name: Zefiros-Software/DocoptCpp
+    version: '@head'
+    definition: ../
+modules:
+  - name: Zefiros-Software/Defaults
+    version: '@head'
