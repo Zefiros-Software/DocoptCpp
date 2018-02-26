@@ -24,8 +24,8 @@
 -- @endcond
 -- ]]
 
-workspace "Docopt"
+workspace "DocoptCpp"
     zefiros.testDefinition("Docopt")
 
-    project "Docopt"
+    project "DocoptCpp"
         zpm.uses "Zefiros-Software/DocoptCpp"
