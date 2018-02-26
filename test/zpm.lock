@@ -2,6 +2,14 @@
   "definition": "./",
   "optionals": [],
   "private": {
+    "libraries": [ {
+      "definition": "../",
+      "hash": "a46ae7fbb91a72a6d81842a4ea114caf1c65ad2e",
+      "name": "Zefiros-Software/DocoptCpp",
+      "repository": "https://github.com/docopt/docopt.cpp.git",
+      "tag": "HEAD",
+      "versionRequirement": "@head"
+    } ],
     "modules": [ {
       "definition": "https://github.com/Zefiros-Software/ZefirosDefaults.git",
       "hash": "d9d31a4b3537d60447b5e77aeaa30e17597c0c40",
