@@ -29,9 +29,6 @@
 
 #include <stdint.h>
 
-static int gargc;
-static char **gargv;
-
 static const char USAGE[] =
     R"(Naval Fate.
 
@@ -51,25 +48,26 @@ static const char USAGE[] =
       --drifting    Drifting mine.
 )";
 
-TEST( UtilTest, Sanity )
+
+TEST(UtilTest, Sanity)
 {
     std::map<std::string, docopt::value> args
-        = docopt::docopt(USAGE,
-                         { gargv + 1, gargv + gargc },
-                         true,               // show help if requested
-                         "Naval Fate 2.0");  // version string
+    = docopt::docopt(USAGE,
+    { "--version" },
+    true,               // show help if requested
+    "Naval Fate 2.0");  // version string
 
-    for(auto const& arg : args) 
+
+
+    for (auto const &arg : args)
     {
         std::cout << arg.first <<  arg.second << std::endl;
     }
 }
 
-int main( int argc, char **argv )
+int main(int argc, char **argv)
 {
-    gargc = argc;
-    gargv = argv;
-    testing::InitGoogleTest( &argc, argv );
+    testing::InitGoogleTest(&argc, argv);
 
     int32_t result = RUN_ALL_TESTS();
 
